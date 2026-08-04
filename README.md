@@ -20,19 +20,19 @@
 <details>
   <summary>📷 Посмотреть скриншоты</summary>
 
-  ![[Главная страница](materials/15.png)](materials/15.png)
+  ![Главная страница](materials/15.png)
   *Главная страница и акционный блок*
 
-  ![[Карта объектов](materials/12.png)](materials/12.png)
+  ![Карта объектов](materials/12.png)
   *Интерактивная карта расположения*
 
-  ![[Каталог проектов](materials/16.png)](materials/16.png)
+  ![Каталог проектов](materials/16.png)
   *Каталог жилых комплексов*
 
-  ![[Ипотечный калькулятор](materials/17.png)](materials/17.png)
+  ![Ипотечный калькулятор](materials/17.png)
   *Поп-ап окно с расчетом ипотеки*
-</details>
 
+</details>
 ## 🛠️ Технологии
 
 - **Frontend:** React.js / Vue.js / HTML5 / CSS3 (Tailwind CSS / Bootstrap)
