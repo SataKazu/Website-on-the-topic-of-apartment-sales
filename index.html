@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description" content="Эквестрия альянс - современные жилые комплексы с развитой инфраструктурой">
+    <meta name="keywords" content="жилые комплексы, недвижимость, квартиры, строительство">
+    <meta name="theme-color" content="#20B2AA">
+    <title>Эквестрия альянс - Современные жилые комплексы</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Skip link -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:bg-[#20B2AA] focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:z-[9999]">Перейти к основному содержимому</a>
+
+    <!-- Header -->
+    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" aria-label="На главную" class="text-2xl font-extrabold text-[#20B2AA] tracking-tight hover:opacity-80 transition-opacity">
+                    Эквестрия <span class="text-gray-800 font-light">альянс</span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav aria-label="Основное меню" class="hidden md:block">
+                    <ul class="flex items-center gap-8">
+                        <li><a class="nav-link" href="#projects">Проекты</a></li>
+                        <li><a class="nav-link" href="#map-section">Расположение</a></li>
+                        <li><a class="nav-link" href="#news">Новости</a></li>
+                        <li><a class="nav-link" href="#about">О компании</a></li>
+                        <li>
+                            <a href="#contacts" class="inline-block bg-[#20B2AA] text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-[#1a9e97] transition-colors text-sm">
+                                Связаться
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Burger -->
+                <button id="burger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Открыть меню" aria-expanded="false">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Nav -->
+            <nav id="mobileNav" class="mobile-nav hidden md:hidden" aria-label="Мобильное меню">
+                <ul class="flex flex-col gap-1 py-4">
+                    <li><a class="mobile-nav-link" href="#projects">Проекты</a></li>
+                    <li><a class="mobile-nav-link" href="#map-section">Расположение</a></li>
+                    <li><a class="mobile-nav-link" href="#news">Новости</a></li>
+                    <li><a class="mobile-nav-link" href="#about">О компании</a></li>
+                    <li><a class="mobile-nav-link" href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main id="main-content">
+
+        <!-- Hero -->
+        <section class="hero relative text-white min-h-[70vh] flex items-center">
+            <!-- Замена фонового видео на картинку -->
+            <img src="materials/1.jpg" class="absolute inset-0 w-full h-full object-cover" alt="Фоновое изображение ЖК Атлантида">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+            <div class="container mx-auto px-4 relative z-10 py-20">
+                <div class="max-w-2xl">
+                    <p class="text-[#20B2AA] font-semibold text-sm tracking-widest uppercase mb-4 hero-fade">Новый жилой район</p>
+                    <h1 class="hero-title mb-6">Атлантида</h1>
+                    <p class="text-xl mb-2 hero-fade hero-fade-delay-1">
+                        <span class="text-4xl font-extrabold">от 6,2 млн ₽</span>
+                    </p>
+                    <p class="text-lg text-white/80 mb-8 hero-fade hero-fade-delay-2">Множество вариантов планировок для любой семьи</p>
+                    <div class="flex flex-wrap gap-4 hero-fade hero-fade-delay-3">
+                        <a href="#projects" class="bg-[#20B2AA] text-white px-8 py-3.5 rounded-xl font-semibold hover:bg-[#1a9e97] transition-all hover:shadow-lg hover:shadow-[#20B2AA]/25">
+                            Смотреть проекты
+                        </a>
+                        <a href="#contacts" class="border-2 border-white/40 text-white px-8 py-3.5 rounded-xl font-semibold hover:bg-white/10 transition-all">
+                            Записаться на консультацию
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-14">
+                    <p class="text-[#20B2AA] font-semibold text-sm tracking-widest uppercase mb-2">Каталог</p>
+                    <h2 class="section-title-center">Наши проекты</h2>
+                    <p class="text-gray-500 max-w-xl mx-auto mt-4">Выберите подходящий жилой комплекс из нашей коллекции современных проектов</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <article class="project-card flex flex-col">
+                        <div class="card-media">
+                            <img src="materials/2.jpg" alt="ЖК Невский" class="card-video w-full h-full object-cover">
+                            <div class="card-play-hint"><i class="fas fa-play"></i></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="project-card-title">ЖК Невский</h3>
+                            <p class="project-description">Современный жилой комплекс в историческом центре Санкт-Петербурга с развитой инфраструктурой и зелёными зонами.</p>
+                            <div class="space-y-3 mb-6">
+                                <div class="flat-option">
+                                    <span class="flat-label">1-комн.</span>
+                                    <span class="flat-area">35 м²</span>
+                                    <span class="flat-price">13 500 000 ₽</span>
+                                </div>
+                                <div class="flat-option">
+                                    <span class="flat-label">2-комн.</span>
+                                    <span class="flat-area">50 м²</span>
+                                    <span class="flat-price">14 800 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="project-buttons mt-auto">
+                                <button class="project-button primary" data-project="nevska" data-image="materials/2.jpg">Подробнее</button>
+                                <a href="#contacts" class="project-button secondary">Консультация</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="project-card flex flex-col">
+                        <div class="card-media">
+                            <img src="materials/3.jpg" alt="ЖК Атлантида" class="card-video w-full h-full object-cover">
+                            <div class="card-play-hint"><i class="fas fa-play"></i></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="project-card-title">ЖК Атлантида</h3>
+                            <p class="project-description">Уникальный жилой комплекс на Петровском острове с панорамными видами на Финский залив.</p>
+                            <div class="space-y-3 mb-6">
+                                <div class="flat-option">
+                                    <span class="flat-label">1-комн.</span>
+                                    <span class="flat-area">30 м²</span>
+                                    <span class="flat-price">13 200 000 ₽</span>
+                                </div>
+                                <div class="flat-option">
+                                    <span class="flat-label">2-комн.</span>
+                                    <span class="flat-area">60 м²</span>
+                                    <span class="flat-price">15 200 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="project-buttons mt-auto">
+                                <button class="project-button primary" data-project="atlantida" data-image="materials/3.jpg">Подробнее</button>
+                                <a href="#contacts" class="project-button secondary">Консультация</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="project-card flex flex-col">
+                        <div class="card-media">
+                            <img src="materials/4.jpg" alt="ЖК Василеостровский" class="card-video w-full h-full object-cover">
+                            <div class="card-play-hint"><i class="fas fa-play"></i></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="project-card-title">ЖК Василеостровский</h3>
+                            <p class="project-description">Жилой комплекс премиум-класса с панорамными видами на исторический центр Санкт-Петербурга.</p>
+                            <div class="space-y-3 mb-6">
+                                <div class="flat-option">
+                                    <span class="flat-label">1-комн.</span>
+                                    <span class="flat-area">40 м²</span>
+                                    <span class="flat-price">14 000 000 ₽</span>
+                                </div>
+                                <div class="flat-option">
+                                    <span class="flat-label">2-комн.</span>
+                                    <span class="flat-area">70 м²</span>
+                                    <span class="flat-price">16 000 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="project-buttons mt-auto">
+                                <button class="project-button primary" data-project="vasileostrovsky" data-image="materials/4.jpg">Подробнее</button>
+                                <a href="#contacts" class="project-button secondary">Консультация</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map -->
+        <section id="map-section" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-14">
+                    <p class="text-[#20B2AA] font-semibold text-sm tracking-widest uppercase mb-2">География</p>
+                    <h2 class="section-title-center">Расположение объектов</h2>
+                </div>
+                <div class="map-container">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News -->
+        <section id="news" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-14">
+                    <p class="text-[#20B2AA] font-semibold text-sm tracking-widest uppercase mb-2">Пресс-центр</p>
+                    <h2 class="section-title-center">Новости</h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <article class="news-card">
+                        <div class="news-card-icon"><i class="fas fa-leaf"></i></div>
+                        <h3 class="news-card-title">Зелёный город</h3>
+                        <p class="news-card-text">Запуск нового жилого комплекса «Зелёный город», сочетающего современные технологии и экологичность.</p>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-card-icon"><i class="fas fa-water"></i></div>
+                        <h3 class="news-card-title">Солнечный берег</h3>
+                        <p class="news-card-text">В новом проекте «Солнечный берег» доступны квартиры с видом на море. Уникальное расположение и высокое качество.</p>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-card-icon"><i class="fas fa-city"></i></div>
+                        <h3 class="news-card-title">Город будущего</h3>
+                        <p class="news-card-text">Начато строительство ЖК «Город будущего» с инновационными решениями и продуманной инфраструктурой.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <!-- Stats -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
+                    <div class="stat-card">
+                        <i class="fas fa-building stat-icon"></i>
+                        <p class="stat-number">15+</p>
+                        <p class="stat-label">Проектов реализовано</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-users stat-icon"></i>
+                        <p class="stat-number">5 000+</p>
+                        <p class="stat-label">Довольных клиентов</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-award stat-icon"></i>
+                        <p class="stat-number">10+</p>
+                        <p class="stat-label">Лет на рынке</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="about-image-wrap">
+                        <img src="materials/5.jpg" 
+                             alt="Санкт-Петербург — город, где мы строим" 
+                             class="about-image" loading="lazy">
+                    </div>
+                    <div>
+                        <p class="text-[#20B2AA] font-semibold text-sm tracking-widest uppercase mb-2">О нас</p>
+                        <h2 class="text-3xl font-extrabold text-gray-800 mb-8">Создаём пространства для жизни</h2>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800 mb-2">Наша миссия</h3>
+                                <p class="text-gray-600 leading-relaxed">Создавать современные жилые комплексы, которые сочетают комфорт, безопасность и экологичность. Широкий выбор квартир для самых требовательных клиентов.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800 mb-3">Преимущества</h3>
+                                <ul class="space-y-3">
+                                    <li class="flex items-center gap-3 text-gray-600">
+                                        <i class="fas fa-check-circle text-[#20B2AA] flex-shrink-0"></i>
+                                        Передовые технологии строительства
+                                    </li>
+                                    <li class="flex items-center gap-3 text-gray-600">
+                                        <i class="fas fa-check-circle text-[#20B2AA] flex-shrink-0"></i>
+                                        Экологичные материалы
+                                    </li>
+                                    <li class="flex items-center gap-3 text-gray-600">
+                                        <i class="fas fa-check-circle text-[#20B2AA] flex-shrink-0"></i>
+                                        Продуманная инфраструктура
+                                    </li>
+                                    <li class="flex items-center gap-3 text-gray-600">
+                                        <i class="fas fa-check-circle text-[#20B2AA] flex-shrink-0"></i>
+                                        Высокое качество отделки
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <a href="#contacts" class="inline-flex items-center gap-2 mt-8 bg-[#20B2AA] text-white px-8 py-3.5 rounded-xl font-semibold hover:bg-[#1a9e97] transition-all hover:shadow-lg hover:shadow-[#20B2AA]/25">
+                            Связаться с нами
+                            <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacts -->
+        <section id="contacts" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-14">
+                    <p class="text-[#20B2AA] font-semibold text-sm tracking-widest uppercase mb-2">Контакты</p>
+                    <h2 class="section-title-center">Свяжитесь с нами</h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- News Ticker -->
+                    <div class="contact-panel">
+                        <h3 class="contact-panel-title">Последние новости</h3>
+                        <div class="news-scroll-container">
+                            <div class="news-scroll" id="newsScroll">
+                                <div class="news-ticker-item">
+                                    <span class="news-ticker-date">15.03.2024</span>
+                                    <h4 class="news-ticker-heading">Открытие ЖК «Солнечный»</h4>
+                                    <p class="news-ticker-text">Начало продаж квартир с современной инфраструктурой</p>
+                                </div>
+                                <div class="news-ticker-item">
+                                    <span class="news-ticker-date">14.03.2024</span>
+                                    <h4 class="news-ticker-heading">Скидки в ЖК «Городской»</h4>
+                                    <p class="news-ticker-text">Специальное предложение на квартиры с отделкой</p>
+                                </div>
+                                <div class="news-ticker-item">
+                                    <span class="news-ticker-date">13.03.2024</span>
+                                    <h4 class="news-ticker-heading">Завершение ЖК «Комфорт»</h4>
+                                    <p class="news-ticker-text">Успешный ввод в эксплуатацию</p>
+                                </div>
+                                <div class="news-ticker-item">
+                                    <span class="news-ticker-date">12.03.2024</span>
+                                    <h4 class="news-ticker-heading">Новый ЖК «Современный»</h4>
+                                    <p class="news-ticker-text">Анонс проекта с инновационными решениями</p>
+                                </div>
+                                <div class="news-ticker-item">
+                                    <span class="news-ticker-date">11.03.2024</span>
+                                    <h4 class="news-ticker-heading">Рекорд продаж в ЖК «Уютный»</h4>
+                                    <p class="news-ticker-text">Более 100 квартир за первую неделю</p>
+                                </div>
+                                <div class="news-ticker-item">
+                                    <span class="news-ticker-date">10.03.2024</span>
+                                    <h4 class="news-ticker-heading">Новые планировки</h4>
+                                    <p class="news-ticker-text">Обновлённые варианты в ЖК «Солнечный»</p>
+                                </div>
+                                <div class="news-ticker-item">
+                                    <span class="news-ticker-date">09.03.2024</span>
+                                    <h4 class="news-ticker-heading">Детский сад открыт</h4>
+                                    <p class="news-ticker-text">Новый сад в ЖК «Городской» готов</p>
+                                </div>
+                                <div class="news-ticker-item">
+                                    <span class="news-ticker-date">08.03.2024</span>
+                                    <h4 class="news-ticker-heading">Скидки на парковку</h4>
+                                    <p class="news-ticker-text">Специальное предложение на подземные парковки</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-panel">
+                        <h3 class="contact-panel-title">Контактная информация</h3>
+                        <div class="space-y-5">
+                            <a href="tel:+79991234567" class="contact-info-row">
+                                <i class="fas fa-phone"></i>
+                                <span>+7 (999) 123-45-67</span>
+                            </a>
+                            <a href="mailto:info@vestria.ru" class="contact-info-row">
+                                <i class="fas fa-envelope"></i>
+                                <span>info@vestria.ru</span>
+                            </a>
+                            <div class="contact-info-row">
+                                <i class="fas fa-clock"></i>
+                                <span>Пн–Пт 9:00 – 18:00</span>
+                            </div>
+                            <div class="contact-info-row">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>ул. Ленина, корпус 5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form -->
+                    <div class="contact-panel">
+                        <h3 class="contact-panel-title">Обратная связь</h3>
+                        <form id="contactForm" class="space-y-4" novalidate>
+                            <div class="form-group">
+                                <label for="name" class="form-label">ФИО</label>
+                                <input type="text" id="name" name="name" required class="form-control" placeholder="Иванов Иван Иванович">
+                                <p class="error-message" id="nameError">Пожалуйста, введите ваше имя</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Телефон</label>
+                                <input type="tel" id="phone" name="phone" required class="form-control" placeholder="+7 (___) ___-__-__">
+                                <p class="error-message" id="phoneError">Введите корректный номер телефона</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Сообщение</label>
+                                <textarea id="message" name="message" rows="3" required class="form-control" placeholder="Ваш вопрос..."></textarea>
+                                <p class="error-message" id="messageError">Пожалуйста, введите сообщение</p>
+                            </div>
+                            <button type="submit" class="submit-button" id="submitBtn">
+                                <span class="btn-text">Отправить</span>
+                                <span class="spinner" aria-hidden="true"><i class="fas fa-circle-notch fa-spin"></i></span>
+                            </button>
+                            <p class="form-success hidden" id="formSuccess">
+                                <i class="fas fa-check-circle"></i> Спасибо! Мы свяжемся с вами в ближайшее время.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <p class="text-xl font-extrabold text-[#20B2AA] mb-4">Эквестрия <span class="font-light text-white">альянс</span></p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Современные жилые комплексы для тех, кто ценит комфорт и качество.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Навигация</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#projects" class="hover:text-[#20B2AA] transition-colors">Проекты</a></li>
+                        <li><a href="#map-section" class="hover:text-[#20B2AA] transition-colors">Расположение</a></li>
+                        <li><a href="#news" class="hover:text-[#20B2AA] transition-colors">Новости</a></li>
+                        <li><a href="#about" class="hover:text-[#20B2AA] transition-colors">О компании</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Контакты</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="tel:+79991234567" class="hover:text-[#20B2AA] transition-colors">+7 (999) 123-45-67</a></li>
+                        <li><a href="mailto:info@vestria.ru" class="hover:text-[#20B2AA] transition-colors">info@vestria.ru</a></li>
+                        <li>ул. Ленина, корпус 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                &copy; 2024 Эквестрия альянс. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Название проекта</h2>
+                <button class="close-button" aria-label="Закрыть">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="video-section">
+                    <img id="modalImage" class="w-full h-full object-cover" src="" alt="Изображение проекта">
+                </div>
+                <div class="info-section">
+                    <p class="description" id="modalDescription"></p>
+                    <div class="features" id="modalFeatures">
+                        <div class="feature-item"><i class="fas fa-shield-alt"></i><span>Надёжное строительство</span></div>
+                        <div class="feature-item"><i class="fas fa-tree"></i><span>Зелёные зоны</span></div>
+                        <div class="feature-item"><i class="fas fa-car"></i><span>Подземный паркинг</span></div>
+                        <div class="feature-item"><i class="fas fa-child"></i><span>Детские площадки</span></div>
+                        <div class="feature-item"><i class="fas fa-store"></i><span>Коммерческие помещения</span></div>
+                        <div class="feature-item"><i class="fas fa-video"></i><span>Видеонаблюдение</span></div>
+                    </div>
+                </div>
+                <div class="calculator-section">
+                    <h3>Калькулятор стоимости</h3>
+                    <div class="calculator-inputs">
+                        <div class="input-group">
+                            <label for="calcRooms">Комнаты</label>
+                            <select id="calcRooms">
+                                <option value="1">1-комнатная</option>
+                                <option value="2">2-комнатная</option>
+                                <option value="3">3-комнатная</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="calcArea">Площадь (м²): <span id="areaValue">35</span></label>
+                            <input type="range" id="calcArea" min="25" max="120" value="35">
+                        </div>
+                        <div class="input-group">
+                            <label for="calcFloor">Этаж</label>
+                            <select id="calcFloor">
+                                <option value="1-5">1–5</option>
+                                <option value="6-10">6–10</option>
+                                <option value="11-20">11–20</option>
+                                <option value="21+">21+</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="price-info">
+                        <div class="total-price">
+                            <span>Итого:</span>
+                            <span id="totalPrice">3 500 000 ₽</span>
+                        </div>
+                        <div class="mortgage-info">
+                            <div class="mortgage-item">
+                                <span>Взнос 20%:</span>
+                                <span id="downPayment">700 000 ₽</span>
+                            </div>
+                            <div class="mortgage-item">
+                                <span>Ипотека/мес:</span>
+                                <span id="monthlyPayment">32 000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-section">
+                    <a href="#contacts" class="primary-button" id="modalContactBtn">Записаться на консультацию</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Наверх">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
